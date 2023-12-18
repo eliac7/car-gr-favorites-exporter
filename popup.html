@@ -1,99 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Extract Favorites</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html,
-      body {
-        width: 300px;
-        height: 180px;
-      }
+<html lang="el">
 
-      body {
-        font-family: "Arial", sans-serif;
-        background-color: #1976d2;
-        margin: 0;
-        padding: 20px;
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extract Favorites</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      button {
-        background-color: #3e9077;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        margin-top: 50px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.3s, box-shadow 0.3s;
-      }
+    html,
+    body {
+      width: 300px;
+      height: 180px;
+    }
 
-      button:hover {
-        background-color: #45a049;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #1976d2;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-      button:active {
-        background-color: #397d37;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      }
+    button {
+      background-color: #3e9077;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      margin-top: 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
 
-      .flex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .inline-flex{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .flex-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="flex-column">
-      <img
-        src="https://static-cz.car.gr/_nuxt/img/logo.cd34a0b.svg"
-        alt="car.gr logo"
-      />
+    button:hover {
+      background-color: #45a049;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-      <button id="extractButton">Εξαγωγή Αγαπημένων</button>
-    </div>
-      <a
-        href="https://www.github.com/eliac7"
-        target="_blank"
-        class="inline-flex"
-        style="
+    button:active {
+      background-color: #397d37;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inline-flex {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-column">
+    <img src="https://static-cz.car.gr/_nuxt/img/logo.cd34a0b.svg" alt="car.gr logo" />
+
+    <button id="extractButton">Εξαγωγή Αγαπημένων</button>
+  </div>
+  <a href="https://www.github.com/eliac7" target="_blank" class="inline-flex" style="
           margin-top: 20px;
           text-decoration: none;
           color: white;
 
-        "
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-          alt="github logo"
-          style="width: 40px; height: 40px; margin-right: 10px";
-        />
-        <span> Find me on <b>GitHub</b> </span>
+        ">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo"
+      style="width: 40px; height: 40px; margin-right: 10px" ; />
+    <span> Find me on <b>GitHub</b> </span>
     </div>
 
     <script src="popup.js"></script>
-  </body>
+</body>
+
 </html>
